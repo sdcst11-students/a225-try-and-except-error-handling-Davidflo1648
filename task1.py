@@ -9,9 +9,11 @@
 # until they have entered a value integer value
 
 while True:
-    number = input("Please enter in an integer value")
+    number = input("Please enter in an integer value: ")
     try:
+        print('Now attempting to convert value into an integer')
         number = int(number)
+        print('Successfully converted into integer')
         break
     except Exception as e:
         print('There was an error. Please try again\n')
